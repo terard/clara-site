@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Clara is an ops-tooling competitive intelligence researcher that finds white space in repeated competitor complaints."
+    />
+    <title>Clara - Ops Gap Researcher</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Clara - Ops Gap Researcher" />
+    <meta
+      property="og:description"
+      content="Clara interrogates your wedge, weighs noisy public reviews, and surfaces complaints that repeat across competitors."
+    />
+    <meta property="og:image" content="assets/clara-source-board.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Clara - Ops Gap Researcher" />
+    <meta
+      name="twitter:description"
+      content="Clara interrogates your wedge, weighs noisy public reviews, and surfaces complaints that repeat across competitors."
+    />
+    <meta name="twitter:image" content="assets/clara-source-board.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Clara home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M5 6.5h14M5 12h9M5 17.5h6" />
+              <path d="M16.5 14.25l2.25 2.25L22 12.75" />
+            </svg>
+          </span>
+          <span>Clara</span>
+        </a>
+        <div class="nav-links" aria-label="Page sections">
+          <a href="#method">Method</a>
+          <a href="#demo">Demo</a>
+          <a href="#evidence">Evidence</a>
+          <a href="#example">Example</a>
+        </div>
+        <a class="nav-cta" href="https://github.com/terard/clara-app">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M9 7h8v8" />
+          </svg>
+          <span>Open repo</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Competitive intelligence for ops tooling</p>
+          <h1 id="hero-title">
+            Find the white space hiding between competitor reviews.
+          </h1>
+          <p class="hero-lede">
+            Clara interrogates your wedge, weighs noisy public reviews, and
+            surfaces complaints that repeat across vendors.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a
+              class="button button-primary"
+              href="client-onboarding-white-space-map.md"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 19.5V5a2 2 0 0 1 2-2h9l5 5v11.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5Z"
+                />
+                <path d="M14 3v6h6M8 13h8M8 17h6" />
+              </svg>
+              View white-space map
+            </a>
+            <a class="button button-secondary" href="#demo">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7Z" />
+              </svg>
+              See Clara work
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Clara chatbot preview">
+          <div class="chat-window">
+            <div class="chat-topbar">
+              <div class="chat-agent">
+                <span class="agent-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path d="M5 6.5h14M5 12h9M5 17.5h6" />
+                    <path d="M16.5 14.25l2.25 2.25L22 12.75" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Clara</strong>
+                  <span>Source health: moderate</span>
+                </div>
+              </div>
+              <span class="status-chip">Angle gate active</span>
+            </div>
+
+            <div class="chat-stream" aria-live="polite">
+              <article class="message message-user">
+                <span>User</span>
+                <p>
+                  Summarize GUIDEcx reviews for me. Is there an opportunity
+                  here?
+                </p>
+              </article>
+              <article class="message message-clara">
+                <span>Clara</span>
+                <p id="typed-response">
+                  I can read GUIDEcx, but I will not call that competitive
+                  intelligence yet.
+                </p>
+              </article>
+              <div class="gate-list" aria-label="Clara angle gate">
+                <div><strong>1</strong><span>Category</span></div>
+                <div><strong>2</strong><span>Segment</span></div>
+                <div><strong>3</strong><span>Competitors</span></div>
+                <div><strong>4</strong><span>Wedge</span></div>
+              </div>
+            </div>
+
+            <form class="chat-input" aria-label="Sample Clara prompt">
+              <label for="sample-prompt">Prompt Clara</label>
+              <div>
+                <input
+                  id="sample-prompt"
+                  value="Compare Rocketlane, GUIDEcx, and Dock for mid-market onboarding teams"
+                  readonly
+                />
+                <button
+                  type="button"
+                  aria-label="Send sample prompt"
+                  title="Send sample prompt"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 14-7-5 14-3-5-6-2Z" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Clara principles">
+        <div>
+          <strong>Not star ratings.</strong>
+          <span>Repeated complaints.</span>
+        </div>
+        <div>
+          <strong>Not one vendor.</strong>
+          <span>Category triangulation.</span>
+        </div>
+        <div>
+          <strong>Not generic summaries.</strong>
+          <span>Wedge-backed maps.</span>
+        </div>
+      </section>
+
+      <section
+        class="section method"
+        id="method"
+        aria-labelledby="method-title"
+      >
+        <div class="section-heading reveal">
+          <p class="eyebrow">The method</p>
+          <h2 id="method-title">Clara refuses the shallow read.</h2>
+          <p>
+            One vendor review page is usually a mirror of that vendor's roadmap
+            and review campaign. Clara starts by making the research angle
+            explicit.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-item reveal">
+            <span class="step-label">01</span>
+            <h3>Interrogate the wedge</h3>
+            <p>
+              Category, buyer segment, competitor set, prior belief, and
+              decision all get named before source work begins.
+            </p>
+          </article>
+          <article class="method-item reveal">
+            <span class="step-label">02</span>
+            <h3>Discount the source</h3>
+            <p>
+              Recent verified reviewers, practitioner threads, incentives,
+              seller invites, and segment fit are weighed separately.
+            </p>
+          </article>
+          <article class="method-item reveal">
+            <span class="step-label">03</span>
+            <h3>Map the repeated pain</h3>
+            <p>
+              Vendor-specific misses get separated from complaints that repeat
+              across the whole category.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section demo-section"
+        id="demo"
+        aria-labelledby="demo-title"
+      >
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chatbot demo</p>
+          <h2 id="demo-title">
+            A Clara conversation, tuned for white-space discovery.
+          </h2>
+          <p>
+            Use the controls to switch between the angle gate, source-health
+            pass, and final wedge recommendation.
+          </p>
+        </div>
+
+        <div class="demo-layout">
+          <div
+            class="demo-controls reveal"
+            role="tablist"
+            aria-label="Clara demo states"
+          >
+            <button
+              class="demo-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="demo-panel"
+              data-demo="gate"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16M4 12h10M4 19h7" />
+              </svg>
+              Angle gate
+            </button>
+            <button
+              class="demo-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="demo-panel"
+              data-demo="source"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3 4 7v5c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V7l-8-4Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+              Source health
+            </button>
+            <button
+              class="demo-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="demo-panel"
+              data-demo="map"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18V6m6 12V9m6 9V4m4 16H3" />
+              </svg>
+              White-space map
+            </button>
+          </div>
+
+          <article
+            class="demo-panel reveal"
+            id="demo-panel"
+            role="tabpanel"
+            aria-live="polite"
+          >
+            <div class="panel-kicker" id="demo-kicker">Angle gate</div>
+            <h3 id="demo-heading">
+              Clara asks what you are really trying to prove.
+            </h3>
+            <div class="conversation" id="demo-conversation">
+              <p><strong>User</strong> Summarize GUIDEcx reviews.</p>
+              <p>
+                <strong>Clara</strong> One vendor mostly reveals that vendor's
+                roadmap and reviewer mix. Which category, segment, competitor
+                set, wedge, belief, and decision should I test?
+              </p>
+            </div>
+            <div class="output-row" id="demo-output">
+              <span>Minimum viable angle</span>
+              <strong>Category + segment + competitors + decision</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section evidence"
+        id="evidence"
+        aria-labelledby="evidence-title"
+      >
+        <div class="section-heading reveal">
+          <p class="eyebrow">Source weighting</p>
+          <h2 id="evidence-title">Every source gets a credibility job.</h2>
+          <p>
+            The point is not to collect more snippets. The point is to know
+            which snippets deserve trust.
+          </p>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="evidence-card reveal">
+            <img
+              src="assets/clara-source-board.png"
+              alt="A Clara source board showing verified reviews, practitioner threads, and vendor-owned claims arranged by trust level."
+              width="960"
+              height="720"
+              loading="lazy"
+            />
+          </article>
+          <div class="evidence-list">
+            <article class="signal reveal">
+              <h3>Verified, recent reviews</h3>
+              <p>
+                High signal when the reviewer role, company size, date, and
+                source label match the target segment.
+              </p>
+            </article>
+            <article class="signal reveal">
+              <h3>Practitioner threads</h3>
+              <p>
+                Weighted up when operators describe the actual workflow,
+                workarounds, and buying tradeoffs.
+              </p>
+            </article>
+            <article class="signal reveal">
+              <h3>Vendor-owned claims</h3>
+              <p>
+                Useful for positioning, product direction, and claimed
+                capabilities. Weak evidence for buyer pain.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section example"
+        id="example"
+        aria-labelledby="example-title"
+      >
+        <div class="section-heading reveal">
+          <p class="eyebrow">Worked example</p>
+          <h2 id="example-title">
+            Client onboarding portals: visibility is table stakes.
+          </h2>
+          <p>
+            Clara compared Rocketlane, GUIDEcx, and Dock for mid-market B2B
+            implementation teams. The opening was not another shared portal.
+          </p>
+        </div>
+
+        <div class="gap-list">
+          <article class="gap-item reveal">
+            <div class="gap-rank">01</div>
+            <div>
+              <h3>The dead-portal gap</h3>
+              <p>
+                The portal exists, but the customer still does not reliably act.
+                The wedge is customer-action recovery.
+              </p>
+            </div>
+            <span class="confidence">Moderate</span>
+          </article>
+          <article class="gap-item reveal">
+            <div class="gap-rank">02</div>
+            <div>
+              <h3>The CRM truth gap</h3>
+              <p>
+                Implementation detail lives in the onboarding tool, while CRM
+                and CS systems still need manual updates.
+              </p>
+            </div>
+            <span class="confidence">Moderate+</span>
+          </article>
+          <article class="gap-item reveal">
+            <div class="gap-rank">03</div>
+            <div>
+              <h3>The process-maturity gap</h3>
+              <p>
+                Teams with messy onboarding motions need help shaping the first
+                plan, not only managing a finished one.
+              </p>
+            </div>
+            <span class="confidence">Moderate</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="cta-copy reveal">
+          <p class="eyebrow">Portable ICM folder</p>
+          <h2 id="cta-title">
+            Drop Clara into a Claude project and ask for a category read.
+          </h2>
+          <p>
+            Use the included rules, source map, worked transcript, and
+            white-space map as the live demo.
+          </p>
+        </div>
+        <div class="cta-actions reveal">
+          <a
+            class="button button-primary"
+            href="https://github.com/terard/clara-app"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7M9 7h8v8" />
+            </svg>
+            Open GitHub repo
+          </a>
+          <a
+            class="button button-secondary inverse"
+            href="client-onboarding-transcript.md"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" />
+            </svg>
+            Read transcript
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Clara — competitive intelligence for ops tooling.</p>
+      <p>
+        <a href="https://github.com/terard/clara-app">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="client-onboarding-white-space-map.md">White-space map</a>
+        &nbsp;·&nbsp;
+        <a href="client-onboarding-transcript.md">Transcript</a>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
